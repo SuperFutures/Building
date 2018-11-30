@@ -5,6 +5,8 @@ using UnityEngine;
 public class CameraControll : MonoBehaviour
 {
     public Transform Target;
+
+    public Transform Camera;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,6 +14,6 @@ public class CameraControll : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt(Target,Vector3.forward);
+	    Camera.LookAt(Target);
 	}
 }
